@@ -53,7 +53,7 @@ function Form() {
       setModal({
         isOpen: true,
         type: "success",
-        message: "Your application has been successfully submitted! Thank you for applying to MichTobbaCares INC! We will get in touch with you as soon as possible!",
+        message: "Your details has been successfully submitted! We will get in touch with you as soon as possible! God Bless!",
       });
 
       handleReset();
@@ -61,7 +61,7 @@ function Form() {
       setModal({
         isOpen: true,
         type: "error",
-        message: "There was an error submitting your application. Please try again or refresh your browser.",
+        message: "There was an error registering you. Please try again or refresh your browser.",
       });
       console.error("Error submitting application: ", error);
     }
