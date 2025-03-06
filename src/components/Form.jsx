@@ -167,12 +167,12 @@ function Form() {
 
         <label htmlFor="prayer">Prayer Request(s)?</label>
         <textarea
-          name="about"
-          id="about"
+          name="prayer"
+          id="prayer"
           cols={30}
           rows={5}
           placeholder="Enter here"
-          value={formData.about}
+          value={formData.prayer}
           onChange={handleChange}
         ></textarea>
 
