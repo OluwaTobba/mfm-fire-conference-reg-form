@@ -10,7 +10,6 @@ function Form() {
     lastname: "",
     email: "",
     phone: "",
-    whatsapp: "",
     gender: "",
     location: "",
     prayer: "",
@@ -36,7 +35,6 @@ function Form() {
       lastname: "",
       email: "",
       phone: "",
-      whatsapp: "",
       gender: "",
       location: "",
       prayer: "",
@@ -53,7 +51,7 @@ function Form() {
       setModal({
         isOpen: true,
         type: "success",
-        message: "Your details has been successfully submitted! We will get in touch with you as soon as possible! God Bless!",
+        message: "Thanks for registering, your details have been successfully submitted; come thirsty and hungry to experience, enjoy and encounter the Holy Ghost!",
       });
 
       handleReset();
@@ -75,7 +73,7 @@ function Form() {
     <div className="container">
       <img src={BannerImg} alt="Banner" className="bannerImg" />
       <h1>Register for the Programme</h1>
-      <h4>( * means compulsory)</h4> <br />
+      <h4>( * means required)</h4> <br />
 
       <form onSubmit={handleSubmit}>
         <label htmlFor="firstname">First Name*</label>
@@ -117,15 +115,14 @@ function Form() {
           required
         />
 
-        <label htmlFor="whatsapp">WhatsApp Number*</label>
+        {/* <label htmlFor="whatsapp">WhatsApp Number</label>
         <input
           type="number"
           placeholder="Enter WhatsApp Number"
           name="whatsapp"
           value={formData.whatsapp}
           onChange={handleChange}
-          required
-        />
+        /> */}
 
         {/* <label htmlFor="social">Social Media*</label>
         <input
@@ -155,14 +152,13 @@ function Form() {
           /> Female
         </div>
 
-        <label htmlFor="location">Location*</label>
+        <label htmlFor="location">Location</label>
         <input
           type="text"
           placeholder="Enter Location"
           name="location"
           value={formData.location}
           onChange={handleChange}
-          required
         />
 
         <label htmlFor="prayer">Prayer Request(s)?</label>
